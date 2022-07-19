@@ -1,0 +1,15 @@
+.contenedorImagenPersonal{
+    display: flex;
+    justify-content: center;
+}
+
+.imagenPersonal{
+    width:250px;
+    height:250px;
+    border-radius:160px;
+    border:10px solid #666;
+}
+
+.fondoSobreMi{
+    background-color: whitesmoke;
+}
