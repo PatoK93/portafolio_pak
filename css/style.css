@@ -1,3 +1,11 @@
+body{
+    background-color: black;
+}
+
+h1, .textoblanco{
+    color: white;
+}
+
 .contenedorImagenPersonal{
     display: flex;
     justify-content: center;
@@ -10,6 +18,52 @@
     border:10px solid #666;
 }
 
-.fondoSobreMi{
+.fondoDistinto{
     background-color: whitesmoke;
+}
+
+.tituloCentrado{
+    display: flex;
+    justify-content: center;
+}
+
+.tamanioEstandarCardsSkills{
+    height: 750px;
+    width: 300px;
+}
+
+.tamanioEstandarImagenesSkills{
+    height: 300px;
+    width: auto;
+}
+
+.marginTop{
+    margin-top: 60px;
+}
+
+.tamanioEstandarCardsFormacion{
+    height: 500px;
+    width: 300px;
+}
+
+.tamanioEstandarImagenesFormacion{
+    height: 300px;
+    width: auto;
+}
+
+.bodyTarjetaOscuro{
+    background-color: black;
+}
+
+.textoBodyTarjetaClaro{
+    color: white;
+}
+
+.contactoCentrado{
+    display: flex;
+    justify-content: center;
+}
+
+.pieDePagina{
+    text-align: center;
 }

@@ -20,7 +20,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Patricio Agustín Kanaszyc</a>
           <button
@@ -37,33 +37,35 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Sobre Mí</a>
+                <a class="nav-link" aria-current="page" href="#sobreMi"
+                  >Sobre Mí</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Hobbies</a>
+                <a class="nav-link" href="#formacionAcademica">Formación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Formación</a>
+                <a class="nav-link" href="#experienciaProfesional">Experiencia profesional</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
-            <span class="navbar-text"> pato_.20@hotmail.com </span>
+            <span class="navbar-text"> pato_.20@hotmail.com</span>
           </div>
         </div>
       </nav>
-      <div class="container-fluid">
+      <div class="container-fluid marginTop">
         <div class="row">
           <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
             <h1>
               Hola, mi nombre es <b>Patricio Agusín Kanaszyc</b>, y soy
               desarrollador FullStack
             </h1>
-            <p>
+            <p class="textoblanco">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Assumenda ullam minus eligendi vero consequuntur placeat dolorum
               eaque expedita dolore adipisci sapiente aperiam velit iusto
@@ -81,7 +83,7 @@
               rel="noopener"
               ><img src="./assets/flechita.svg" alt="flechita" />LinkedIn</a
             >
-            <a href="#"><img src="./assets/flechita.svg" alt="flechita" />CV</a>
+            <a href="https://drive.google.com/file/d/1qdHLcSJaUx93CFlBBL7IA1jYn1q3j_cz/view" target="_blank" rel="noopener"><img src="./assets/flechita.svg" alt="flechita"/>CV</a>
           </div>
           <div
             class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 contenedorImagenPersonal"
@@ -94,12 +96,12 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div  id="sobreMi" class="container-fluid">
         <div class="row">
           <div
-            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 fondoSobreMi"
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 fondoDistinto"
           >
-            <h2>Sobre Mí</h2>
+            <h2><b>Sobre Mí</b></h2>
             <p>
               Organizado, metódico y dedicado en mi trabajo. Focalizado en
               obtener nuevas experiencias y conocimientos para mi desarrollo
@@ -109,7 +111,427 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="container-fluid" id="skills">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 tituloCentrado"
+          >
+            <h2 class="textoBlanco"><b>Skills</b></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-12 row-cols-md-12 g-12">
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img
+              src="./assets/csharp.webp"
+              class="card-img-top tamanioEstandarImagenesSkills"
+              alt="Lenguajes"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lenguajes</h5>
+              <ul class="card-text">
+                <li>C#</li>
+                <li>Javascript</li>
+                <li>Java (JavaEE)</li>
+                <li>C++</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img
+              src="./assets/puntoNet.png"
+              class="card-img-top tamanioEstandarImagenesSkills"
+              alt="Frameworks"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Frameworks</h5>
+              <ul class="card-text">
+                <li>.NET</li>
+                <li>.NET Core</li>
+                <li>ASP.NET</li>
+                <li>JSF</li>
+                <li>Struts</li>
+                <li>Hibernate</li>
+                <li>Spring</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img
+              src="./assets/sqlServer.png"
+              class="card-img-top tamanioEstandarImagenesSkills"
+              alt="Bases de Datos"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bases de datos</h5>
+              <ul class="card-text">
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img src="./assets/visualStudio.png" class="card-img-top tamanioEstandarImagenesSkills" alt="IDE´s" />
+            <div class="card-body">
+              <h5 class="card-title">IDE´s</h5>
+              <ul class="card-text">
+                <li>Visual Studio</li>
+                <li>Visual Studio Code</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img src="./assets/git.png" class="card-img-top tamanioEstandarImagenesSkills" alt="Versionadores" />
+            <div class="card-body">
+              <h5 class="card-title">Versionadores</h5>
+              <ul class="card-text">
+                <li>GIT</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img src="./assets/scrum.png" class="card-img-top tamanioEstandarImagenesSkills" alt="Metodologías" />
+            <div class="card-body">
+              <h5 class="card-title">Metodologías</h5>
+              <ul class="card-text">
+                <li>Scrum</li>
+                <li>Kanban</li>
+                <li>Agile</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img src="./assets/ingles.png" class="card-img-top tamanioEstandarImagenesSkills" alt="Idiomas" />
+            <div class="card-body">
+              <h5 class="card-title">Idiomas</h5>
+              <ul class="card-text">
+                <li>Español (nativo)</li>
+                <li>Inglés (intermedio)</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img src="./assets/adicional.png" class="card-img-top tamanioEstandarImagenesSkills" alt="Conocimientos adicionales" />
+            <div class="card-body">
+              <h5 class="card-title">Conocimientos adicionales</h5>
+              <ul class="card-text">
+                <li>MVC (patrón de diseño)</li>
+                <li>Entity (ORM)</li>
+                <li>LINQ</li>
+                <li>APIRestFull</li>
+                <li>Blazor (Framework)</li>
+                <li>RabbitMQ (mensajería)</li>
+                <li>SPA</li>
+                <li>Jira (herramienta)</li>
+                <li>Confluence (herramienta)</li>
+                <li>AJAX</li>
+                <li>Swagger UI</li>
+                <li>PostMan</li>
+                <li>JQuery</li>
+                <li>Apache NiFi (ETL)</li>
+                <li>Apache Kafka (mensajería)</li>
+                <li>Dapper (Micro ORM)</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsSkills">
+            <img src="./assets/devops.jfif" class="card-img-top tamanioEstandarImagenesSkills" alt="DevOps" />
+            <div class="card-body">
+              <h5 class="card-title">DevOps</h5>
+              <ul class="card-text">
+                <li>Docker (contenedores)</li>
+                <li>Kubernetes (orquestador)</li>
+                <li>Jenkins (pipelines)</li>
+                <li>AWS (nube)</li>
+                <li>Azure (nube)</li>
+                <li>GCP (nube)</li>
+                <li>Terraform</li>
+                <li>Helm (orquestador)</li>
+                <li>OpenShift (orquestador)</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="fondoDistinto">
+      <div class="container-fluid" id="formacionAcademica">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 tituloCentrado"
+          >
+            <h2><b>Formación Académica</b></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-12 row-cols-md-12 g-12">
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/alura.jpg"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="Alura-Oracle"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Fullstack</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>Alura y Oracle (Proyecto ONE)</li>
+                <li>Mar 2022 - Oct 2022</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/educacionIt.jpg"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="Educación IT"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Fullstack .NET</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>Educación IT</li>
+                <li>Ene 2022 - Ene 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/coderHouse.jpg"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="CoderHouse"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Fullstack MERN</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>CoderHouse</li>
+                <li>Ene 2022 - Ene 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/mundosE.jpg"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="MundosE"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Formacion en DevOps</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>Universidad de Córdoba, Facultad de Ciencias Exactas, Físicas y Naturales (UNC FCEFyN) y Escuela de Negocios Mundos E</li>
+                <li>Abr 2021 - Feb 2022</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/axigma.jfif"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="Axigma"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Consultor SAP MM</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>Axigma Technologies SAP Gold Education Partner</li>
+                <li>Jun 2019 - Ago 2019</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/uba.png"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="UBA"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Analista en Relaciones del Trabajo con especialización en capacitación</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>Universidad de Buenos Aires (UBA)</li>
+                <li>Mar 2014 - Dic 2019</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card tamanioEstandarCardsFormacion">
+            <img
+              src="./assets/utn.png"
+              class="card-img-top tamanioEstandarImagenesFormacion"
+              alt="UTN"
+            />
+            <div class="card-body bodyTarjetaOscuro">
+              <h5 class="card-title textoBodyTarjetaClaro">Técnico Superior en Programación (TSP)</h5>
+              <ul class="card-text textoBodyTarjetaClaro">
+                <li>Universidad Tecnológica Nacional (UTN)</li>
+                <li>Mar 2011 - Jul 2014</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="experienciaProfesional">
+      <div class="row">
+        <div
+          class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 tituloCentrado"
+        >
+          <h2 class="textoBlanco"><b>Experiencia Profesional</b></h2>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accenture Mar 2022 - Actualidad
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Desempeño mi rol con desarrollador .NET Ssr. para el cliente Banco Galicia. Trabajo diario con metodologías ágiles, C#, .NET Core, Apche NiFi, Apache Kafka, OpenShift, Jenkins, Sql Server, etc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Xirect DS Dic 2021 - Mar 2022
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Developer Fullstack .NET. Desarrollos varios para su producto principal (ORM), el cual es utilizado por sus clientes en el exterior. Tecnologías: C#, .NET Core, ASP.NET, HTML5, CSS3, JS, AJAX, JQUERY, GitHub, Visual Studio, paquetes Nugets, GitLab.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            TAG LATAM S.A. Mar 2021 – Dic 2021
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>Developer .NET. Desarrollo para cliente Teichert y soporte para cliente MediaAmp. Dicha empresa responde a un holding de EE.UU., por lo cual todos su clientes son de ahí. Tecnologías y metodologías utilizadas: C#, .NET Core, SQL, APIRestFull, CORS, Azure DevOps, Jira, Kanban, Scrum, Confluence, Swagger UI, PostMan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Interlub S.A. May 2016 – Mar 2021
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Administrativo (tares generales y sector cobranzas). Tareas administrativas generales (organización de archivo, atención telefónica, uso del sistema de gestión Tango). Reclamo de pago a proveedores y gestión de todo lo referente a los mismos (principal laboral dentro del área).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Telefónica S.A. (CallCenter Oficial) Feb 2014 – Abr 2014
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Ejecutivo de ventas Movistar-Speedy. Venta telefónica de equipos celulares llamadas entrantes y salientes (cater, cambio de plan, garantías, etc.) a todos los clientes registrados de Movistar. Venta telefónica y entrega de beneficios a los clientes potenciales y Premium de Speedy.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            PaqSystems (Consultoría Informática) May 2012 – May 2013
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Programador Jr. Encargado del desarrollo, mejora y mantenimiento (instalación, seguimiento de uso, problemas etc.) de los software a medida, implementados por la consultora. Soporte Técnico especializado a los clientes (help desk). Realización de tareas de mantenimiento de los programas de gestión (Tango Gestión, etc.). Manejo de todo lo relacionado a las bases de datos en SQL. Tecnologías utilizadas: C#, ASP.NET, Visual Studio, LINQ, GIT.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid fondoDistinto" id="contacto">
+      <div class="row contactoCentrado">
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+          <img src="./assets/contacto.png" alt="contacto" class="imagenContacto">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+          <form action="">
+            <h5>Contacto</h5>
+            <p>¿Quieres contactarme?</p>
+            <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+            <div class="mb-3">
+              <label for="inputNombre" class="form-label">Nombre y Apellido</label>
+              <input class="form-control" id="inputNombre" placeholder="Nombre y Apellido">
+            </div>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Dirección de E-mail</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="mail@dominion.com">
+            </div>
+            <div class="mb-3">
+              <label for="inputAsunto" class="form-label">Asunto</label>
+              <input class="form-control" id="inputAsunto" placeholder="Asunto">
+            </div>
+            <div class="mb-3">
+              <label for="inputMensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="inputMensaje" rows="3" placeholder="Escriba su mensaje aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mb-3" id="btnEnviar">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <p class="pieDePagina textoblanco">Desarrollado por Patricio Agustín Kanaszyc</p>
+            <p class="pieDePagina textoblanco">2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
