@@ -65,15 +65,7 @@
               Hola, mi nombre es <b>Patricio Agusín Kanaszyc</b>, y soy
               desarrollador FullStack
             </h1>
-            <p class="textoblanco">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Assumenda ullam minus eligendi vero consequuntur placeat dolorum
-              eaque expedita dolore adipisci sapiente aperiam velit iusto
-              cupiditate delectus ipsam, amet doloribus harum! Quibusdam odio,
-              accusantium distinctio, maxime recusandae dolorem earum accusamus
-              consectetur nam porro ullam, ea aperiam natus quam tempore impedit
-              nulla!
-            </p>
+            <p class="textoblanco">Tengo 29 años, y soy argentino. A continuación, podrán ver un paneo general de mis habilidades, mis estudios, y mis experiencias hasta el momento. Incentivo a que navegen por mi página de GitHub, donde podrán ver los proyectos personales en los que trabajé, para fines educativos y personales. Gracias!</p>
             <a href="https://github.com/PatoK93" target="_blank" rel="noopener"
               ><img src="./assets/flechita.svg" alt="flechita" />GitHub</a
             >
@@ -492,29 +484,29 @@
     </div>
     <div class="container-fluid fondoDistinto" id="contacto">
       <div class="row contactoCentrado">
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+        <div class="col-sm-8 col-md-8 col-lg-4 col-xl-4 col-xxl-4">
           <img src="./assets/contacto.png" alt="contacto" class="imagenContacto">
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4">
+        <div class="col-sm-8 col-md-8 col-lg-4 col-xl-4 col-xxl-4">
           <form action="">
             <h5>Contacto</h5>
             <p>¿Quieres contactarme?</p>
             <p>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
             <div class="mb-3">
               <label for="inputNombre" class="form-label">Nombre y Apellido</label>
-              <input class="form-control" id="inputNombre" placeholder="Nombre y Apellido">
+              <input class="form-control" id="inputNombre" placeholder="Nombre y Apellido" maxlength="50">
             </div>
             <div class="mb-3">
               <label for="inputEmail" class="form-label">Dirección de E-mail</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="mail@dominion.com">
+              <input type="email" class="form-control" id="inputEmail" placeholder="mail@dominion.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
             </div>
             <div class="mb-3">
               <label for="inputAsunto" class="form-label">Asunto</label>
-              <input class="form-control" id="inputAsunto" placeholder="Asunto">
+              <input class="form-control" id="inputAsunto" placeholder="Asunto" maxlength="50">
             </div>
             <div class="mb-3">
               <label for="inputMensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="inputMensaje" rows="3" placeholder="Escriba su mensaje aquí"></textarea>
+              <textarea class="form-control" id="inputMensaje" rows="3" placeholder="Escriba su mensaje aquí" maxlength="300"></textarea>
             </div>
             <button type="submit" class="btn btn-primary mb-3" id="btnEnviar">Enviar</button>
           </form>
@@ -532,6 +524,8 @@
         </div>
       </div>
     </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
